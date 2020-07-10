@@ -1,0 +1,105 @@
+.hero {
+  min-height: 100vh;
+  background-image: url("hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-tagline {
+  font-size: 3rem;
+}
+.hero-text {
+  font-family: "Times New Roman", Times, serif;
+}
+.intro-head {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.intro-line {
+  font-family: "Times New Roman", Times, serif;
+}
+.intro-img {
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 0 rgba(3, 57, 99, 0.35);
+}
+.intro-img:hover {
+  box-shadow: 0 10px 10px 0 rgba(235, 72, 180, 0.794);
+}
+.intro-image-wrapper:hover > h4 {
+  visibility: visible;
+}
+.intro-image-wrapper > h4 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: white;
+  box-shadow: 0 5px 5px 10px rgba(0, 0, 0, 0.555);
+  border: 2px solid white;
+  padding: 15px;
+  visibility: hidden;
+  z-index: 15;
+  transition: all ease-in-out 0.2s;
+  text-align: center;
+  font-family: cursive;
+}
+.btn:hover {
+  box-shadow: 0 8px 4px 0 red;
+  font-size: medium;
+}
+.intro-icon {
+  margin: 0px auto;
+  font-size: 15rem;
+}
+.test {
+  box-shadow: 2px 2px 4px 3px black;
+  font-family: "Times New Roman", Times, serif;
+}
+.test:hover {
+  box-shadow: 2px 2px 4px 3px darkblue;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#footer-links-container ul {
+  list-style-type: none;
+  padding-left: 15px !important;
+}
+#footer-links-container ul > :first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768) {
+  .hero-tagline {
+    font-size: 7rem;
+  }
+  #footer-links-container ul {
+    padding-left: 30px !important;
+  }
+}
